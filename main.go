@@ -5,6 +5,7 @@ package main
 
 import (
 	"aoc15/day1"
+	"aoc15/day2"
 	"bufio"
 	"fmt"
 	"os"
@@ -28,7 +29,7 @@ func main() {
 	}
 	part = strings.TrimSpace(part)
 
-	fmt.Printf("running day: %s and part: %s", day, part)
+	fmt.Printf("running day: %s and part: %s\n", day, part)
 
 	match(day, part)
 }
@@ -41,6 +42,13 @@ func match(day string, part string) {
 			day1.Part1Run()
 		case "2":
 			day1.Part2Run()
+		}
+	case "2":
+		switch part {
+		case "1":
+			day2.Part1Run()
+		case "2":
+			day2.Part2Run()
 		}
 	}
 }
