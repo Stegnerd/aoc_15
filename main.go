@@ -6,6 +6,7 @@ package main
 import (
 	"aoc15/day1"
 	"aoc15/day2"
+	"aoc15/day3"
 	"bufio"
 	"fmt"
 	"os"
@@ -49,6 +50,11 @@ func match(day string, part string) {
 			day2.Part1Run()
 		case "2":
 			day2.Part2Run()
+		}
+	case "3":
+		switch part {
+		case "1":
+			day3.Part1Run()
 		}
 	}
 }
