@@ -55,6 +55,8 @@ func match(day string, part string) {
 		switch part {
 		case "1":
 			day3.Part1Run()
+		case "2":
+			day3.Part2Run()
 		}
 	}
 }
